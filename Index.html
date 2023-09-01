@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<style>
+     body{
+            font-family: sans-serif;
+            background: linear-gradient(#141e30, #243b55);
+            display: flex;
+        }
+        .formulario{
+            width:100%;
+	        height:85%;
+	        background:linear-gradient(#243b55, #141e30);
+	        border-radius: 35px;
+            padding: 20px;
+        }
+        h2{
+            text-align: center;
+            color: white;
+        }
+</style>
+<body>
+    <div class="container">
+        <div class="col s12 m6 l4">
+            <h2>Cadastro de Usuarios</h2>
+        </div>    
+                    <div class="card-content formulario">          
+                        <form class="">
+                                <div class="input-field col s12 m6 l4">
+                                    <input placeholder="Nome Completo" id="Nome_Completo" type="text" class="validate">
+                                </div>
+
+                                <div class="input-field col s12 m6 l4">
+                                    <input placeholder="Data de Nascimento" id="Data_de_Nascimento" type="text" class="datepicker">
+                                </div>
+
+                                <div class="input-field col s12 m6 l4">
+                                    <input placeholder="email" id="email" type="email" class="validate">
+                                </div>
+
+                                <div class="input-field col s12 m6 l4">
+                                    <input placeholder="CPF" id="CPF" type="number" class="validate">
+                                </div>
+                                <div class="input-field col s12 m6 l4">
+                                    <input placeholder="Senha" id="Senha" type="password" class="validate">
+                                </div>
+                                <div class="input-field col s12 m6 l4">
+                                    <input placeholder="Confirmar Senha" id="Senha" type="password" class="validate">
+                                </div>
+                                <div>
+                                    <p>Sexo:</p>
+                                <label>
+                                    <input type="radio" class="filled-in" checked="checked" name="genero" />
+                                    <span>Homem</span>
+                                </label>
+                                <label>
+                                    <input type="radio" class="filled-in" checked="checked" name="genero" />
+                                    <span>Mulher</span>
+                                </label>
+                                <label>
+                                    <input type="radio" class="filled-in" checked="checked" name="genero" />
+                                    <span>Não informar</span>
+                                </label>
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Região</label><br>
+                                    <select>
+                                        <option value="" disabled selected>Escolha sua região</option>
+                                        <option value="Brasil">São Jorge</option>
+                                        <option value="Estados Unidos">Morumbi</option>
+                                        <option value="Outra">Outra</option>
+                                    </select>
+                                </div>
+                                <div class="file-field input-field" >
+                                    <div class="btn tooltipped" data-tooltip="Click para adicionar fotos do veiculo">
+                                      <span>Enviar Foto</span>
+                                      <input type="file">
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                      <input class="file-path validate" type="text">
+                                    </div>
+                                </div>
+                                <div>
+                                  <button class="btn waves-effect waves-light" type="submit">Enviar</button>
+                                </div><br>
+                        </form>
+                    </div>              
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <script src="formulario.js"></script>
+     <script src="MAIN.js"></script>
+</body>
+</html>
